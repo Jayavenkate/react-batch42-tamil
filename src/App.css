@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* color: orange; */
+}
+.user-name{
+ color:orange;
+ font-style: italic;
+}
+.user-pic {
+  height: 250px;
+  width:250px;
+  object-fit:cover;
+  border-radius: 50%;
+  
+}
