@@ -19,9 +19,9 @@ export default function App() {
   ];
   return (
     <div className="App">
-      {users.map((usr) => (
+      {/* {users.map((usr) => (
         <Msg name={usr.name} pic={usr.pic} />
-      ))}
+      ))} */}
 
       
      {/* <Msg name="Jaya"
