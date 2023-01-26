@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 
 export default function App() {
   const names=["Sethupathi","Gowtham","Ajith"]
@@ -38,8 +39,21 @@ export default function App() {
     {/* //  {names.map((nm) => (
     //   <Welcome name={nm} />
     //  ))} */}
+    {/* <Counter /> */}
      </div>
   );
+}
+function Counter(){
+ const [like,setLike]=useState(0);
+ const [dislike,setDisLike]=useState(0);
+  return(
+    <div>
+        <button onClick={()=>setLike(like+1)}>
+        👍{like}</button>
+        <button onClick={()=>setDisLike(dislike+1)}>
+        👎{dislike}</button>
+    </div>
+  )
 }
 
 function Msg({pic, name}) {
@@ -52,6 +66,7 @@ alt={name}/>
    <h1>
        Hello, <span className= "user-name">{name}</span>😍🌹😘💖
    </h1>
+   <Counter />
    </div>
 );
 // // JSX ends here
