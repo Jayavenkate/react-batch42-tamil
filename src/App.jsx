@@ -1,7 +1,9 @@
 import "./App.css";
-import { useState } from "react";
+import { MovieList } from "./MovieList";
+import { AddColor } from "./AddColor";
+import { TicTacToe } from "./TicTacToe";
 
-export default function App() {
+ function App() {
   const names=["Sethupathi","Gowtham","Ajith"]
   const users=[
     {
@@ -40,34 +42,12 @@ export default function App() {
     //   <Welcome name={nm} />
     //  ))} */}
     {/* <Counter /> */}
-     </div>
+    {/* <MovieList />   */}
+{/* <AddColor /> */}
+<TicTacToe />
+       </div>
   );
 }
-function Counter(){
- const [like,setLike]=useState(0);
- const [dislike,setDisLike]=useState(0);
-  return(
-    <div>
-        <button onClick={()=>setLike(like+1)}>
-        👍{like}</button>
-        <button onClick={()=>setDisLike(dislike+1)}>
-        👎{dislike}</button>
-    </div>
-  )
-}
+export default App;
 
-function Msg({pic, name}) {
-  
-//   // JSX starts here
-  return (
-    <div>
-<img className="user-pic"src={pic} 
-alt={name}/>
-   <h1>
-       Hello, <span className= "user-name">{name}</span>😍🌹😘💖
-   </h1>
-   <Counter />
-   </div>
-);
-// // JSX ends here
-}
+
