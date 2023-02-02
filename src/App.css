@@ -74,3 +74,9 @@
 .tic-tac-toe{
   text-align: center;
 }
+.not-found{
+  width: 100%;
+  object-fit: cover;
+  max-width: 600px;
+  margin: 0 auto;
+}
